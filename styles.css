@@ -230,12 +230,21 @@ h1 {
 .founder-row:last-child { border-bottom: 1px solid #bfc3d1; }
 
 .founder-photo {
-  display: block;
   width: 84px;
   height: 100px;
-  object-fit: cover;
-  object-position: center top;
+  overflow: hidden;
+  position: relative;
   align-self: end;
+}
+
+.founder-photo img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 200%;
+  width: auto;
+  max-width: none;
+  transform: translateX(-50%);
 }
 
 .volunteer-photo {
