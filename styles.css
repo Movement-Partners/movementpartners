@@ -184,6 +184,59 @@ h1 {
 .content-page h1 { white-space: normal; }
 .content-page .placeholder-copy { margin-top: 40px; padding-top: 0; }
 
+.about-content {
+  padding: clamp(28px, 4vw, 58px) clamp(20px, 3.2vw, 56px) 80px;
+}
+
+.about-content h1 { margin-bottom: clamp(28px, 3vw, 44px); }
+
+.about-list { display: grid; gap: 8px; }
+
+.about-row {
+  border: 1px solid var(--blue);
+  background: var(--paper);
+  color: var(--blue);
+  transition: background-color .25s ease, color .25s ease;
+}
+
+.about-row:hover, .about-row:focus-within, .about-row[open] {
+  background: var(--blue);
+  color: var(--paper);
+}
+
+.about-row summary {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 14px clamp(16px, 2vw, 30px);
+  cursor: pointer;
+  list-style: none;
+  text-align: right;
+  font-family: 'Arial Black', 'Arial Bold', Arial, sans-serif;
+  font-size: clamp(30px, 5.5vw, 82px);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -.055em;
+}
+
+.about-row summary::-webkit-details-marker { display: none; }
+.about-row summary:focus-visible { outline: 3px solid currentColor; outline-offset: -5px; }
+.about-number { font-size: 14px; letter-spacing: 0; padding-top: 5px; }
+
+.about-row p {
+  max-width: 670px;
+  margin: 0 0 0 auto;
+  padding: 4px clamp(16px, 2vw, 30px) 24px;
+  text-align: right;
+  font-size: clamp(16px, 1.2vw, 19px);
+  line-height: 1.45;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-row { transition: none; }
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
