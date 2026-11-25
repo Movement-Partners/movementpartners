@@ -187,10 +187,10 @@ h1 {
 .content-page .placeholder-copy { margin-top: 40px; padding-top: 0; }
 
 .about-content {
-  padding: clamp(18px, 2vw, 28px) clamp(20px, 3.2vw, 56px) 80px;
+  padding: 10px clamp(20px, 3.2vw, 56px) 80px;
 }
 
-.about-content h1 { margin-bottom: clamp(28px, 3vw, 44px); }
+.about-content h1 { font-size: clamp(18px, 2.75vw, 46px); margin-bottom: 14px; }
 
 .about-list { display: grid; gap: 8px; }
 
@@ -265,14 +265,14 @@ h1 {
 }
 
 .team-layout {
-  padding: clamp(18px, 2vw, 28px) clamp(20px, 3.2vw, 56px) 90px;
+  padding: 10px clamp(20px, 3.2vw, 56px) 90px;
 }
 
 .team-heading {
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   color: var(--blue);
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: clamp(38px, 4.3vw, 64px);
+  font-size: clamp(19px, 2.15vw, 32px);
   font-style: italic;
   font-weight: 400;
   letter-spacing: -.05em;
@@ -347,7 +347,7 @@ h1 {
 .founder-name span,
 .founder-title { -webkit-text-stroke: .5px currentColor; }
 
-.volunteers { margin-top: 70px; }
+.volunteers { margin-top: 20px; }
 
 @media (max-width: 760px) {
   .site-header { align-items: flex-start; flex-direction: column; gap: 20px; }
