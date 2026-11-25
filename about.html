@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#102a98" />
     <title>about | movement partners</title>
-    <link rel="stylesheet" href="styles.css?v=about1" />
+    <link rel="stylesheet" href="styles.css?v=about2" />
   </head>
   <body>
     <main class="page-shell content-page">
@@ -28,13 +28,14 @@
       <section class="about-content" aria-labelledby="page-title">
         <h1 id="page-title">about</h1>
         <div class="about-list">
-          <details class="about-row"><summary><span class="about-number">01</span><span>ORIGIN</span></summary><p>Our story will go here. More details about how Movement Partners began are coming soon.</p></details>
-          <details class="about-row"><summary><span class="about-number">02</span><span>MISSION</span></summary><p>Our mission statement will go here. More details about our purpose are coming soon.</p></details>
-          <details class="about-row"><summary><span class="about-number">03</span><span>IMPACT</span></summary><p>Information about our impact will go here. More details about our work are coming soon.</p></details>
-          <details class="about-row"><summary><span class="about-number">04</span><span>OUTREACH</span></summary><p>Information about our outreach will go here. More details about our community connections are coming soon.</p></details>
-          <details class="about-row"><summary><span class="about-number">05</span><span>WHY JOIN?</span></summary><p>Reasons to join Movement Partners will go here. More details about opportunities to get involved are coming soon.</p></details>
+          <div class="about-row"><button type="button" class="about-toggle" aria-expanded="false" aria-controls="about-panel-01"><span class="about-number">01</span><span>ORIGIN</span></button><div class="about-panel" id="about-panel-01" aria-hidden="true"><div><p>Our story will go here. More details about how Movement Partners began are coming soon.</p></div></div></div>
+          <div class="about-row"><button type="button" class="about-toggle" aria-expanded="false" aria-controls="about-panel-02"><span class="about-number">02</span><span>MISSION</span></button><div class="about-panel" id="about-panel-02" aria-hidden="true"><div><p>Our mission statement will go here. More details about our purpose are coming soon.</p></div></div></div>
+          <div class="about-row"><button type="button" class="about-toggle" aria-expanded="false" aria-controls="about-panel-03"><span class="about-number">03</span><span>IMPACT</span></button><div class="about-panel" id="about-panel-03" aria-hidden="true"><div><p>Information about our impact will go here. More details about our work are coming soon.</p></div></div></div>
+          <div class="about-row"><button type="button" class="about-toggle" aria-expanded="false" aria-controls="about-panel-04"><span class="about-number">04</span><span>OUTREACH</span></button><div class="about-panel" id="about-panel-04" aria-hidden="true"><div><p>Information about our outreach will go here. More details about our community connections are coming soon.</p></div></div></div>
+          <div class="about-row"><button type="button" class="about-toggle" aria-expanded="false" aria-controls="about-panel-05"><span class="about-number">05</span><span>WHY JOIN?</span></button><div class="about-panel" id="about-panel-05" aria-hidden="true"><div><p>Reasons to join Movement Partners will go here. More details about opportunities to get involved are coming soon.</p></div></div></div>
         </div>
       </section>
     </main>
+    <script src="about.js" defer></script>
   </body>
 </html>

@@ -199,17 +199,21 @@ h1 {
   transition: background-color .25s ease, color .25s ease;
 }
 
-.about-row:hover, .about-row:focus-within, .about-row[open] {
+.about-row:hover, .about-row:focus-within, .about-row:has([aria-expanded="true"]) {
   background: var(--blue);
   color: var(--paper);
 }
 
-.about-row summary {
+.about-toggle {
   display: flex;
+  width: 100%;
   align-items: flex-start;
   justify-content: space-between;
   gap: 18px;
   padding: 14px clamp(16px, 2vw, 30px);
+  border: 0;
+  background: transparent;
+  color: inherit;
   cursor: pointer;
   list-style: none;
   text-align: right;
@@ -220,9 +224,18 @@ h1 {
   letter-spacing: -.055em;
 }
 
-.about-row summary::-webkit-details-marker { display: none; }
-.about-row summary:focus-visible { outline: 3px solid currentColor; outline-offset: -5px; }
+.about-toggle:focus-visible { outline: 3px solid currentColor; outline-offset: -5px; }
 .about-number { font-size: 14px; letter-spacing: 0; padding-top: 5px; }
+
+.about-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  visibility: hidden;
+  transition: grid-template-rows .35s ease, visibility .35s;
+}
+
+.about-panel[aria-hidden="false"] { grid-template-rows: 1fr; visibility: visible; }
+.about-panel > div { overflow: hidden; min-height: 0; }
 
 .about-row p {
   max-width: 670px;
@@ -234,7 +247,7 @@ h1 {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .about-row { transition: none; }
+  .about-row, .about-panel { transition: none; }
 }
 
 .sr-only {
