@@ -228,9 +228,12 @@ h1 {
 .founder-row:last-child { border-bottom: 1px solid #bfc3d1; }
 
 .founder-photo {
+  display: block;
   width: 84px;
-  aspect-ratio: 1;
-  background: #4b4f57;
+  height: 100px;
+  object-fit: cover;
+  object-position: center top;
+  align-self: end;
 }
 
 .founder-name {
