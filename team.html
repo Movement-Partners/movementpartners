@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="page-shell content-page">
+    <main class="page-shell content-page team-page">
       <section class="showcase" aria-label="Movement Partners navigation">
         <header class="site-header">
           <a class="brand" href="./" aria-label="Movement Partners home">
@@ -25,10 +25,27 @@
           </nav>
         </header>
       </section>
-      <section class="intro" aria-labelledby="page-title">
-        <div class="intro-copy">
-          <h1 id="page-title">team</h1>
-          <div class="placeholder-copy"><p>More information coming soon.</p></div>
+      <h1 class="sr-only">Team</h1>
+      <div class="team-layout">
+        <div class="team-main">
+          <section class="team-group" aria-labelledby="founders-title">
+            <h2 id="founders-title" class="team-heading"><span>OUR</span> founders</h2>
+            <div class="founder-list">
+              <article class="founder-row">
+                <div class="founder-photo" aria-hidden="true"></div>
+                <h3 class="founder-name"><span>LIAM</span> Mowat</h3>
+                <p class="founder-title">Executive Director</p>
+              </article>
+              <article class="founder-row">
+                <div class="founder-photo" aria-hidden="true"></div>
+                <h3 class="founder-name"><span>ORPHEAS</span> Skordilis</h3>
+                <p class="founder-title">Chief Operating Officer</p>
+              </article>
+            </div>
+          </section>
+          <section class="team-group volunteers" aria-labelledby="volunteers-title">
+            <h2 id="volunteers-title" class="team-heading"><span>OUR</span> volunteers</h2>
+          </section>
         </div>
         <nav class="section-nav" aria-label="Section navigation">
           <a href="./">home</a>
@@ -38,7 +55,7 @@
           <a href="contact.html">contact</a>
           <a href="volunteer.html">volunteer</a>
         </nav>
-      </section>
+      </div>
     </main>
   </body>
 </html>
