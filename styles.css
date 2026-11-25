@@ -179,13 +179,15 @@ h1 {
 .section-nav a:last-child { border-bottom: 1px solid #d7d5ce; }
 
 .content-page .image-grid { display: none; }
-.content-page .showcase { padding-bottom: 26px; }
+.content-page .showcase { padding-top: 8px; padding-bottom: 8px; }
+.content-page .site-header { min-height: 0; padding-bottom: 0; }
+.content-page .intro { padding-top: clamp(18px, 2vw, 28px); }
 .content-page .intro-copy { min-height: 310px; }
 .content-page h1 { white-space: normal; }
 .content-page .placeholder-copy { margin-top: 40px; padding-top: 0; }
 
 .about-content {
-  padding: clamp(28px, 4vw, 58px) clamp(20px, 3.2vw, 56px) 80px;
+  padding: clamp(18px, 2vw, 28px) clamp(20px, 3.2vw, 56px) 80px;
 }
 
 .about-content h1 { margin-bottom: clamp(28px, 3vw, 44px); }
@@ -263,7 +265,7 @@ h1 {
 }
 
 .team-layout {
-  padding: clamp(32px, 4vw, 58px) clamp(20px, 3.2vw, 56px) 90px;
+  padding: clamp(18px, 2vw, 28px) clamp(20px, 3.2vw, 56px) 90px;
 }
 
 .team-heading {
@@ -349,6 +351,7 @@ h1 {
 
 @media (max-width: 760px) {
   .site-header { align-items: flex-start; flex-direction: column; gap: 20px; }
+  .content-page .site-header { gap: 10px; }
   .top-nav { display: grid; grid-template-columns: repeat(3, max-content); gap: 8px 18px; }
   .image-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .intro { grid-template-columns: 1fr; gap: 32px; }
